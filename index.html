@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Valley Hostel </title>
+    
+    <style>
+      *  {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+            COLOR: #333;
+
+        }
+
+        /*nAVIGATION BAR*/
+
+        header {
+            background-color: #164a32;
+            padding: 18px 50px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+        nav a:hover{
+            color: #b8e6c8;
+
+        }
+
+        /*home*/
+
+        .home{
+            height: 500px;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hostel building.avif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home-text{
+            color: white;
+
+        }
+        .home-text h1{
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .home-text p{
+            font-size: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2d8a57;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 25px;
+        } 
+        .btn:hover{
+            background-color: #246f46;
+        }
+
+        /*common section*/
+
+        section{
+            padding: 55px;
+        }
+        .heading {
+            text-align: center;
+            margin-bottom:35px;
+
+        }
+
+        .heading h2 {
+            color: #164a32;
+            font-size:32px;
+
+        }
+
+        .heading p {
+            margin-top: 8px;
+            color:#666;
+
+        }
+            /* About */
+
+        .about {
+            background-color: white;
+            text-align: center;
+
+        }
+        .about p{
+            max-width: 800px;
+            margin: auto;
+            line-height:1.7;
+
+
+        } 
+
+        /* facilities*/
+
+        .facilities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+
+
+        }
+        .facilities {
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ddd ;
+
+        }
+        .facility h3{
+            color:#164a32;
+            margin-bottom: 10px;
+
+        }
+        /* fee table*/
+        .fee {
+            background-color: white;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color:white;
+
+        }   
+        th, td{
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+
+
+        }
+        th {
+            background-color: #164a32;
+            color: white;
+
+        }
+        
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+
+        }
+        
+        /* photos*/
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+
+        }
+        .photo img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+        /* mess*/
+        .mess {
+            background-color: white;
+
+        }
+        .mess-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+
+        }
+        .food { 
+            width: 300px;
+            background-color: #f7f7f7; padding-bottom: 15px;
+            border-radius: 8px; 
+            overflow: hidden; 
+            text-align: center; 
+        }
+        .food img { 
+            width: 100%;
+            height: 190px; 
+            object-fit: cover; 
+        }
+        .food h3 { 
+
+            margin-top: 15px; 
+            color: #164a32; 
+        }
+
+        /* Contact */ 
+
+        .contact { 
+            text-align: center; 
+        } 
+        .contact p { 
+            
+            margin: 10px; 
+        }
+
+        /* Footer */ 
+
+        footer { 
+            background-color: #164a32; 
+            color: white; 
+            text-align: center;
+            padding: 20px; 
+        }
+
+        /* Mobile */ 
+
+        @media (max-width: 700px) { 
+            header { 
+                padding: 15px; 
+                flex-direction: column; 
+            } 
+            nav { 
+                margin-top: 15px; 
+            } 
+
+            nav a { 
+                margin: 5px; font-size: 14px; 
+            }
+
+            .home-text h1 { 
+                font-size: 35px; 
+            } 
+
+            .home { 
+                height: 400px; 
+            }
+
+            table { 
+                font-size: 13px; 
+            } 
+        }
+        </style>
+
+        </head> 
+
+        <body> 
+
+            <!-- Navigation --> 
+
+             <header> 
+
+                <div class="logo">
+
+                    Green Valley Hostel 
+
+                </div>
+
+                <nav> 
+                    <a href="#home">Home</a> 
+                    <a href="#about">About</a> 
+                    <a href="#fees">Fees</a> 
+                    <a href="#photos">Photos</a> 
+                    <a href="#mess">Mess</a> 
+                    <a href="#contact">Contact</a> 
+                </nav> 
+            </header>
+
+            <!-- Home --> 
+
+             <section class="home" id="home"> 
+
+                <div class="home-text"> 
+
+                    <h1>Welcome to Green Valley Hostel</h1> 
+
+                    <p> A safe, comfortable and friendly place for students. </p> 
+
+                    <a href="#contact" class="btn"> Contact Us </a> 
+
+                </div> 
+            </section>
+
+            <!-- About --> 
+
+             <section class="about" id="about"> 
+
+                <div class="heading"> 
+
+                    <h2>About Our Hostel</h2> 
+
+                    <p>Everything you need for a comfortable stay.</p> 
+
+                </div> 
+
+                <p> Green Valley Hostel provides a clean and comfortable 
+                    environment for students. 
+                    Our hostel has spacious rooms, 24-hour electricity, Wi-Fi, security, 
+                    study areas and a hygienic mess facility. We try to provide students with a 
+                    peaceful environment where they can focus on their studies. 
+                </p> 
+
+            </section>
+
+            <!-- Facilities --> 
+             <section> 
+
+                <div class="heading"> 
+
+                    <h2>Our Facilities</h2> 
+                    <p>Facilities available for our students</p> 
+                </div> 
+                <div class="facilities"> 
+                    <div class="facility"> 
+                        <h3>Wi-Fi</h3> 
+                        <p>High speed internet facility.</p> 
+                    </div> 
+                    <div class="facility"> 
+                        <h3>Security</h3>
+                        <p>24-hour security and CCTV cameras.</p> 
+                    </div> 
+                    <div class="facility"> 
+                        <h3>Study Room</h3> 
+                        <p>Separate peaceful area for studying.</p> 
+                    </div> 
+
+                    <div class="facility"> 
+                        <h3>Laundry</h3> 
+                        <p>Regular laundry facility for students.</p> 
+                    </div> 
+                    <div class="facility"> 
+                        <h3>Power Backup</h3> 
+                        <p>Generator backup during power cuts.</p> 
+                    </div> 
+                    <div class="facility"> 
+                        <h3>Hot Water</h3> 
+                        <p>Hot water facility is available.</p> 
+                    </div> 
+                </div>
+            </section> 
+            
+            <!-- Fee Structure --> 
+            <section class="fee-section" id="fees"> 
+
+                <div class="heading"> 
+
+                    <h2>Hostel Fee Structure</h2> 
+                    <p>Choose the room according to your requirements.</p> 
+                </div> 
+                <table>
+
+                    <tr> 
+                        <th>Room Type</th> 
+                        <th>Sharing</th> 
+                        <th>Monthly Fee</th> 
+                        <th>Yearly Fee</th> 
+                    </tr> 
+                    
+                    <tr> 
+                        <td>Single Room</td> 
+                        <td>1 Student</td> 
+                        <td>₹10,000</td> 
+                        <td>₹1,20,000</td> 
+                    </tr> 
+                    
+                    <tr> 
+                        <td>Double Room</td> 
+                        <td>2 Students</td> 
+                        <td>₹7,000</td> 
+                        <td>₹84,000</td> 
+                    </tr>
+                    <tr> 
+                        <td>Triple Room</td> 
+                        <td>3 Students</td> 
+                        <td>₹5,500</td> 
+                        <td>₹66,000</td> 
+                    </tr>
+                </table>
+
+            </section>
+
+            <!-- Hostel Photos --> 
+            
+            <section id="photos"> 
+                
+                <div class="heading"> 
+                    <h2>Hostel Photos</h2> 
+                    <p> 
+                        Take a look at our hostel. 
+                    </p> 
+                </div> 
+
+                <div class="photos"> 
+                    <img src="hostel room.jpg" alt="Hostel Room"> 
+
+                    <img src="hostel building.avif" alt="Hostel Building"> 
+
+                    <img src="studyroom.jpg" alt="Study Room"> 
+
+                    <img src="common room.jpg" alt="Common Room"> 
+
+                </div>
+
+            </section> 
+            
+             <!-- Mess --> 
+
+              <section class="mess" id="mess"> 
+                
+                <div class="heading"> 
+
+                    <h2>
+                        Mess & Food
+                    </h2> 
+                    <p> 
+                        Healthy and hygienic food for students. 
+                    </p> 
+
+                </div> 
+
+                <div class="mess-content"> 
+
+                    <div class="food"> 
+
+                        <img src="breakfast.jpg" alt="Breakfast"> 
+
+                        <h3>Breakfast</h3> 
+
+                        <p> Fresh breakfast is served every morning. </p> 
+                    </div>
+
+                    <div class="food"> 
+
+                        <img src="lunch.jpg" alt="Lunch"> 
+
+                        <h3>Lunch</h3> 
+
+
+                        <p> Balanced lunch with vegetables, dal and rice. </p> 
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Contact --> 
+
+             <section class="contact" id="contact"> 
+
+                <div class="heading"> 
+
+                    <h2>
+                        Contact Us
+                    </h2> 
+
+                    <p> 
+                        Want to know more about our hostel? 
+                    </p> 
+
+                </div> 
+
+                <p>
+                    <b>Address:</b> 
+                    Near University Campus, Greater Noida
+                </p> 
+
+                <p>
+                    <b>Phone:</b> 
+                    +91 2626262626
+                </p> 
+
+                <p>
+                    <b>Email:</b> 
+                    greenvalleyhostel@gmail.com
+                </p> 
+
+                <a href="tel:+919876543210" class="btn"> Call Now </a> 
+
+            </section>
+
+        <!-- Footer --> 
+
+             <footer> 
+
+                <p> © 2026 Green Valley Hostel. All Rights Reserved. </p> 
+
+            </footer>
+
+
+
+        
+    </style>
+</head>
+<body>
+
+</body>
+</html> 
